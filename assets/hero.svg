@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <title>Aromal RM — Automotive Software Engineer. Where cars meet code.</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0E1013"/><stop offset="1" stop-color="#1A1D20"/></linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F6C08F"/><stop offset="1" stop-color="#E4572E"/></linearGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6A7076"/><stop offset=".5" stop-color="#23272B"/><stop offset="1" stop-color="#4A4F54"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".09"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <radialGradient id="dial"><stop offset="0" stop-color="#262A2E"/><stop offset="1" stop-color="#0F1215"/></radialGradient>
+    <radialGradient id="glowamb" cx="715" cy="127" r="250" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#E4702F" stop-opacity=".22"/><stop offset="1" stop-color="#E4702F" stop-opacity="0"/></radialGradient>
+    <pattern id="carbon" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#0F1114"/>
+      <rect width="4" height="4" fill="#181B1F"/><rect x="4" y="4" width="4" height="4" fill="#181B1F"/>
+      <rect x="4" width="4" height="4" fill="#fff" fill-opacity=".012"/><rect y="4" width="4" height="4" fill="#fff" fill-opacity=".012"/>
+    </pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="led" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="clip"><rect width="900" height="260" rx="14"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <!-- Background: carbon-fibre weave + warm dash glow -->
+    <rect width="900" height="260" fill="url(#bg)"/>
+    <rect width="900" height="260" fill="url(#carbon)" opacity=".55"/>
+    <rect width="900" height="260" fill="url(#glowamb)"/>
+
+    <!-- Left content -->
+    <text x="52" y="49" font-family="monospace" font-size="10" letter-spacing="3" fill="#E08F62">AUTOMOTIVE SOFTWARE ENGINEER</text>
+    <text x="49" y="119" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="59" font-weight="800" letter-spacing="-2.5" fill="#F3F0EA">Aromal RM</text>
+    <rect x="53" y="136" width="0" height="3" rx="1.5" fill="url(#amber)"><animate attributeName="width" from="0" to="64" dur="1s" begin=".3s" fill="freeze"/></rect>
+    <text x="52" y="172" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="500" fill="#D2CFC9">Building software beneath the screen.</text>
+    <text x="52" y="201" font-family="monospace" font-size="10.5" letter-spacing=".6" fill="#8B8D90"> ANDROID<tspan fill="#E58A5D">/</tspan>LINUX AUTOMOTIVE <tspan fill="#E58A5D"> | </tspan>ANDROID AUTO<tspan fill="#E58A5D"> | </tspan>CARPLAY <tspan fill="#E58A5D"> | </tspan>AOSP  </text> 
+
+    <!-- Turn-signal indicator + employer -->
+    <polygon points="52,226.5 61,231 52,235.5" fill="#7FD48B"><animate attributeName="opacity" calcMode="discrete" values="1;.12" keyTimes="0;.5" dur="1s" repeatCount="indefinite"/></polygon>
+    <text x="70" y="235" font-family="monospace" font-size="10" letter-spacing=".5" fill="#B0AEA8">THINKSEED SYSTEMS</text>
+
+    <!-- Instrument cluster -->
+    <g transform="translate(715 127)">
+      <circle r="113" fill="#090B0D" stroke="url(#chrome)" stroke-width="2"/>
+      <circle r="106" fill="none" stroke="#E4702F" stroke-opacity=".25"/>
+      <circle r="93" fill="url(#dial)" stroke="#353A3E" stroke-width="1.5"/>
+
+      <!-- Shift lights -->
+      <circle cx="-75.8" cy="-63.6" r="3" fill="#1A1E22" stroke="#2F3438" stroke-width=".8"/><circle cx="-75.8" cy="-63.6" r="3" fill="#7FD48B" filter="url(#led)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0;1;0" keyTimes="0;0.089;0.162;0.499;0.71" dur="9s" begin="0.4s" repeatCount="indefinite"/></circle><circle cx="-63.6" cy="-75.8" r="3" fill="#1A1E22" stroke="#2F3438" stroke-width=".8"/><circle cx="-63.6" cy="-75.8" r="3" fill="#7FD48B" filter="url(#led)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0;1;0" keyTimes="0;0.093;0.159;0.502;0.708" dur="9s" begin="0.4s" repeatCount="indefinite"/></circle><circle cx="-49.5" cy="-85.7" r="3" fill="#1A1E22" stroke="#2F3438" stroke-width=".8"/><circle cx="-49.5" cy="-85.7" r="3" fill="#7FD48B" filter="url(#led)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0;1;0;1;0" keyTimes="0;0.097;0.156;0.506;0.543;0.553;0.706" dur="9s" begin="0.4s" repeatCount="indefinite"/></circle><circle cx="-33.9" cy="-93" r="3" fill="#1A1E22" stroke="#2F3438" stroke-width=".8"/><circle cx="-33.9" cy="-93" r="3" fill="#7FD48B" filter="url(#led)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0;1;0;1;0;1;0" keyTimes="0;0.101;0.153;0.51;0.541;0.561;0.623;0.633;0.704" dur="9s" begin="0.4s" repeatCount="indefinite"/></circle><circle cx="-17.2" cy="-97.5" r="3" fill="#1A1E22" stroke="#2F3438" stroke-width=".8"/><circle cx="-17.2" cy="-97.5" r="3" fill="#7FD48B" filter="url(#led)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0;1;0;1;0;1;0" keyTimes="0;0.105;0.15;0.514;0.539;0.569;0.621;0.642;0.702" dur="9s" begin="0.4s" repeatCount="indefinite"/></circle><circle cx="0" cy="-99" r="3" fill="#1A1E22" stroke="#2F3438" stroke-width=".8"/><circle cx="0" cy="-99" r="3" fill="#F2B17E" filter="url(#led)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0;1;0;1;0;1;0" keyTimes="0;0.108;0.147;0.518;0.537;0.578;0.619;0.651;0.699" dur="9s" begin="0.4s" repeatCount="indefinite"/></circle><circle cx="17.2" cy="-97.5" r="3" fill="#1A1E22" stroke="#2F3438" stroke-width=".8"/><circle cx="17.2" cy="-97.5" r="3" fill="#F2B17E" filter="url(#led)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0;1;0;1;0;1;0" keyTimes="0;0.112;0.144;0.522;0.535;0.586;0.616;0.659;0.697" dur="9s" begin="0.4s" repeatCount="indefinite"/></circle><circle cx="33.9" cy="-93" r="3" fill="#1A1E22" stroke="#2F3438" stroke-width=".8"/><circle cx="33.9" cy="-93" r="3" fill="#F2B17E" filter="url(#led)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0;1;0;1;0;1;0" keyTimes="0;0.116;0.141;0.526;0.532;0.594;0.614;0.668;0.695" dur="9s" begin="0.4s" repeatCount="indefinite"/></circle><circle cx="49.5" cy="-85.7" r="3" fill="#1A1E22" stroke="#2F3438" stroke-width=".8"/><circle cx="49.5" cy="-85.7" r="3" fill="#E4573D" filter="url(#led)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0;1;0;1;0;1;0" keyTimes="0;0.12;0.138;0.529;0.53;0.602;0.612;0.677;0.693" dur="9s" begin="0.4s" repeatCount="indefinite"/></circle><circle cx="63.6" cy="-75.8" r="3" fill="#1A1E22" stroke="#2F3438" stroke-width=".8"/><circle cx="63.6" cy="-75.8" r="3" fill="#E4573D" filter="url(#led)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0;1;0" keyTimes="0;0.124;0.135;0.686;0.691" dur="9s" begin="0.4s" repeatCount="indefinite"/></circle><circle cx="75.8" cy="-63.6" r="3" fill="#1A1E22" stroke="#2F3438" stroke-width=".8"/><circle cx="75.8" cy="-63.6" r="3" fill="#E4573D" filter="url(#led)" opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.128;0.132" dur="9s" begin="0.4s" repeatCount="indefinite"/></circle>
+
+      <!-- Gauge: track, redline, live arc -->
+      <path d="M-67.4 56.6A88 88 0 1 1 67.4 56.6" fill="none" stroke="#2B2F33" stroke-width="5" stroke-linecap="round"/>
+      <path d="M87.9 -5.1A88 88 0 0 1 67.4 56.6" fill="none" stroke="#B4402F" stroke-width="5"/>
+      <path d="M-67.4 56.6A88 88 0 1 1 67.4 56.6" fill="none" stroke="url(#amber)" stroke-width="4" stroke-linecap="round" pathLength="100" stroke-dasharray="11.1 100">
+        <animate attributeName="stroke-dasharray" values="11.1 100;11.1 100;97.8 100;13.3 100;11.7 100;13.3 100;11.1 100;11.1 100;87.8 100;57.8 100;91.1 100;62.2 100;93.3 100;53.3 100;22.2 100;11.1 100;11.1 100" keyTimes="0;0.05;0.13;0.19;0.26;0.32;0.38;0.46;0.53;0.545;0.61;0.625;0.69;0.71;0.8;0.9;1" dur="9s" begin="0.4s" repeatCount="indefinite"/>
+      </path>
+
+      <!-- Ticks and numerals (x1000 rpm) -->
+      <g><path d="M-63.6 53.4L-55.2 46.3" stroke="#B9B1A6" stroke-width="1.6" /><path d="M-74.9 35.8L-69.5 33.2" stroke="#B9B1A6" stroke-width="1" opacity=".6"/><path d="M-81.4 16L-70.7 13.9" stroke="#B9B1A6" stroke-width="1.6" /><path d="M-82.9 -4.8L-76.9 -4.5" stroke="#B9B1A6" stroke-width="1" opacity=".6"/><path d="M-79 -25.3L-68.6 -22" stroke="#B9B1A6" stroke-width="1.6" /><path d="M-70.2 -44.3L-65.1 -41.1" stroke="#B9B1A6" stroke-width="1" opacity=".6"/><path d="M-57 -60.4L-49.4 -52.4" stroke="#B9B1A6" stroke-width="1.6" /><path d="M-40.1 -72.7L-37.2 -67.4" stroke="#B9B1A6" stroke-width="1" opacity=".6"/><path d="M-20.7 -80.4L-18 -69.7" stroke="#B9B1A6" stroke-width="1.6" /><path d="M0 -83L0 -77" stroke="#B9B1A6" stroke-width="1" opacity=".6"/><path d="M20.7 -80.4L18 -69.7" stroke="#B9B1A6" stroke-width="1.6" /><path d="M40.1 -72.7L37.2 -67.4" stroke="#B9B1A6" stroke-width="1" opacity=".6"/><path d="M57 -60.4L49.4 -52.4" stroke="#B9B1A6" stroke-width="1.6" /><path d="M70.2 -44.3L65.1 -41.1" stroke="#B9B1A6" stroke-width="1" opacity=".6"/><path d="M79 -25.3L68.6 -22" stroke="#B9B1A6" stroke-width="1.6" /><path d="M82.9 -4.8L76.9 -4.5" stroke="#D8573F" stroke-width="1" opacity=".6"/><path d="M81.4 16L70.7 13.9" stroke="#D8573F" stroke-width="1.6" /><path d="M74.9 35.8L69.5 33.2" stroke="#D8573F" stroke-width="1" opacity=".6"/><path d="M63.6 53.4L55.2 46.3" stroke="#D8573F" stroke-width="1.6" /></g>
+      <g font-family="monospace" font-size="9" text-anchor="middle"><text x="-46" y="41.6" fill="#B5AEA4">0</text><text x="-58.9" y="14.6" fill="#B5AEA4">1</text><text x="-57.1" y="-15.3" fill="#B5AEA4">2</text><text x="-41.2" y="-40.6" fill="#B5AEA4">3</text><text x="-15" y="-55.1" fill="#B5AEA4">4</text><text x="15" y="-55.1" fill="#B5AEA4">5</text><text x="41.2" y="-40.6" fill="#B5AEA4">6</text><text x="57.1" y="-15.3" fill="#B5AEA4">7</text><text x="58.9" y="14.6" fill="#E4573D">8</text><text x="46" y="41.6" fill="#E4573D">9</text></g>
+
+      <!-- Display -->
+      <rect x="-40" y="9" width="80" height="35" rx="8" fill="#0C0F12" stroke="#4A433E"/>
+      <text x="0" y="20" text-anchor="middle" font-family="monospace" font-size="6.5" letter-spacing="2" fill="#E58A5D">SPORT+</text>
+      <text x="0" y="38" text-anchor="middle" font-family="monospace" font-size="17" font-weight="bold" letter-spacing="2" fill="#F2A673">AR</text>
+      <text x="0" y="64" text-anchor="middle" font-family="monospace" font-size="6.5" letter-spacing="1.5" fill="#8E8A84">x1000 r/min</text>
+
+      <!-- Needle: idles, then revs and shifts through the gears -->
+      <g transform="rotate(-101.1)">
+        <path d="M0 0L0 -68" stroke="#EB7A45" stroke-width="5" stroke-linecap="round" opacity=".4" filter="url(#glow)"/>
+        <path d="M0 17L-2.6 10L-1.3 -68L0 -77L1.3 -68L2.6 10Z" fill="url(#amber)"/>
+        <animateTransform attributeName="transform" type="rotate" values="-101.1;-101.1;124.2;-95.3;-99.7;-95.3;-101.1;-101.1;98.2;20.2;106.9;31.8;112.7;8.7;-72.2;-101.1;-101.1" keyTimes="0;0.05;0.13;0.19;0.26;0.32;0.38;0.46;0.53;0.545;0.61;0.625;0.69;0.71;0.8;0.9;1" dur="9s" begin="0.4s" repeatCount="indefinite"/>
+      </g>
+      <circle r="7.5" fill="#2A2E32" stroke="#F0A56F" stroke-width="1.5"/>
+      <circle r="2.5" fill="#F8C7A0"/>
+
+      <!-- Glass reflection -->
+      <path d="M-82 -26A86 86 0 0 1 82 -26Q0 -56 -82 -26Z" fill="url(#glass)"/>
+    </g>
+
+    <!-- Corner details -->
+    <g stroke="#D28A63" stroke-width="1" fill="none" opacity=".65"><path d="M840 51H858V31H877"/><path d="M840 205H858V225H877"/></g>
+    <g fill="#D28A63"><circle cx="840" cy="51" r="2"/><circle cx="840" cy="205" r="2"/></g>
+
+    <rect x=".5" y=".5" width="899" height="259" rx="14" fill="none" stroke="#fff" stroke-opacity=".10"/>
+  </g>
+</svg>

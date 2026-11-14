@@ -1,0 +1,14 @@
+# Local generated assets for profile automation
+/dist/
+/output/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db   
